@@ -25,7 +25,7 @@ $ sudo docker build --no-cache --progress=plain . -t oliverwilms/ocr-service 2>&
 3. Run the IRIS container with your project:
 
 ```
-$ docker-compose up -d
+$ sudo docker run -d -p57700:52773 oliverwilms/ocr-service
 ```
 
 ## OCR and NLP working together:
