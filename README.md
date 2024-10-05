@@ -19,7 +19,7 @@ $ git clone https://github.com/yurimarx/ocr-service.git
 Open the terminal in this directory and run:
 
 ```
-$ docker-compose build
+$ sudo docker build --no-cache --progress=plain . -t oliverwilms/ocr-service 2>&1 | tee build.log
 ```
 
 3. Run the IRIS container with your project:
